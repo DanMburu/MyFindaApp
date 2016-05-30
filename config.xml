@@ -14,8 +14,10 @@
     <author href="http:creativeyr.co.ke" email="d.mburu@creative.co.ke">
         Blue Antelope
     </author>
+	
     
-    <access origin="*" />
+    <access origin="*"  launch-external="yes"  />
+	
 	
 	<allow-intent href="whatsapp:*" />
 	
