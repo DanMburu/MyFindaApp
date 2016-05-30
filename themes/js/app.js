@@ -9,7 +9,7 @@ $( document ).bind( "mobileinit", function() {
 $(document).on("pageshow", "#landing", function () { // When entering pagetwo
  showLoader();
  var url = $('#RootUrl').val() + 'validate.html?option='+ (new Date()).getTime();
-  				
+  $('#try-again').fadeOut();				
   $.get(url, function(data) {
             hideLoader();
 			
@@ -27,7 +27,7 @@ $(document).on("pageshow", "#landing", function () { // When entering pagetwo
 			
           
         }).always(function() {
-           
+           $('#try-again').show();
         });
 		  return false;
 		
